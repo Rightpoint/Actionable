@@ -9,7 +9,7 @@
 import Actionable
 import UIKit
 
-class TableViewController: UIViewController, Actionable {
+class TableViewController: UITableViewController, Actionable {
 
     weak var delegate: Delegate?
 
@@ -19,12 +19,19 @@ class TableViewController: UIViewController, Actionable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableView.register(TableViewCell.self,
+                           forCellReuseIdentifier: TableViewCell.reuseID)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: TableViewCell.reuseID, for: indexPath)
+            as! TableViewCell
+        return cell
     }
 
 }
