@@ -6,9 +6,16 @@
 //  Copyright (c) 2019 Rightpoint. All rights reserved.
 //
 
+import Actionable
 import UIKit
 
-class TableViewController: UIViewController {
+class TableViewController: UIViewController, Actionable {
+
+    weak var delegate: Delegate?
+
+    enum Action {
+        case foo
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -31,6 +31,7 @@
 /* Begin PBXFileReference section */
 		08BFB06B2F7BC7913F02D83B26E6AE91 /* Pods-Actionable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Actionable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1B5E58F7B4BBA77A89FB7BBA9C32A350 /* Pods-Actionable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Actionable_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2D1B7BB522149BD80052F999 /* actionable */ = {isa = PBXFileReference; lastKnownFileType = text; path = actionable; sourceTree = "<group>"; };
 		31183DE230DD8B646922B600D5D27BAC /* Pods-Actionable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Actionable_Example.modulemap"; sourceTree = "<group>"; };
 		33B063D534F5F264D9A8E0143016D349 /* Actionable.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Actionable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		33DDBCB47B1A2595537BC5BB39C3B42B /* Actionable.swifttemplate */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Actionable.swifttemplate; path = Resources/Actionable.swifttemplate; sourceTree = "<group>"; };
@@ -163,6 +164,7 @@
 				F0FB33AFA206888C24187EC1713B06CB /* Actionable+Helpers.swifttemplate */,
 				23E95A1234ACC8719570DCE03F28AF4A /* Pod */,
 				302A6A4C573700A2B49BD63F25CD600D /* Support Files */,
+				2D1B7BB522149BD80052F999 /* actionable */,
 			);
 			name = Actionable;
 			path = ../..;

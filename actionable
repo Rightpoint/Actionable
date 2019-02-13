@@ -1,0 +1,6 @@
+#!/bin/bash
+
+BASE_DIR=$(dirname $0)
+OUTPUT_FILE=$SOURCE_ROOT/Actionable/Actionable+Conformance.swift
+echo $OUTPUT_FILE
+$PODS_ROOT/Sourcery/bin/sourcery --sources $SOURCE_ROOT --sources $BASE_DIR/Sources/ --templates $BASE_DIR/Resources/ --output $OUTPUT_FILE
