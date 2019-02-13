@@ -10,6 +10,8 @@
 		1637333DDA18AC4DBFB411A16B2A1943 /* Pods-Actionable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BCF10ADD7F347BD749FDFDBE3D902CD /* Pods-Actionable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DBF82A02B297131E780616021426B78 /* Actionable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BCD44B127CEFFE64DB7C44952C105 /* Actionable-dummy.m */; };
 		2999801E4F3D905A0909AB0ECFE6A889 /* Pods-Actionable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3913DD19B9FA964BC4688C2176D768 /* Pods-Actionable_Example-dummy.m */; };
+		2D1B7BB022148FB20052F999 /* Actionable+Helpers.swifttemplate in Resources */ = {isa = PBXBuildFile; fileRef = 2D1B7BAE22148FB20052F999 /* Actionable+Helpers.swifttemplate */; };
+		2D1B7BB122148FB20052F999 /* Actionable.swifttemplate in Resources */ = {isa = PBXBuildFile; fileRef = 2D1B7BAF22148FB20052F999 /* Actionable.swifttemplate */; };
 		39E6284DF7A596254432651F90819F92 /* Actionable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF3AF307363B22AE02D411654B633E5 /* Actionable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A04C89ACBEDC1F474DE27A036ED5ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		721B0F6E58ACAB64414ABBCAC809B0C5 /* Actionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB235E683B75578713529634AF54DE /* Actionable.swift */; };
@@ -32,6 +34,8 @@
 		096BCD44B127CEFFE64DB7C44952C105 /* Actionable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Actionable-dummy.m"; sourceTree = "<group>"; };
 		1B5E58F7B4BBA77A89FB7BBA9C32A350 /* Pods-Actionable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Actionable_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1EF3AF307363B22AE02D411654B633E5 /* Actionable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Actionable-umbrella.h"; sourceTree = "<group>"; };
+		2D1B7BAE22148FB20052F999 /* Actionable+Helpers.swifttemplate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Actionable+Helpers.swifttemplate"; sourceTree = "<group>"; };
+		2D1B7BAF22148FB20052F999 /* Actionable.swifttemplate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Actionable.swifttemplate; sourceTree = "<group>"; };
 		31183DE230DD8B646922B600D5D27BAC /* Pods-Actionable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Actionable_Example.modulemap"; sourceTree = "<group>"; };
 		33A09B776D9F63065A80C19059DD0DCA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C8316AFC94C968295E46D863DD9F6E5 /* Pods-Actionable_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Actionable_Example-resources.sh"; sourceTree = "<group>"; };
@@ -123,6 +127,15 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		2D1B7BAD22148F9C0052F999 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D1B7BAF22148FB20052F999 /* Actionable.swifttemplate */,
+				2D1B7BAE22148FB20052F999 /* Actionable+Helpers.swifttemplate */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		44D5347904CF754D6785B84253F2574A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +167,7 @@
 		8B4733A9C0E180A508465F9BFBC67A16 /* Actionable */ = {
 			isa = PBXGroup;
 			children = (
+				2D1B7BAD22148F9C0052F999 /* Resources */,
 				2D1B7BAC22148EE30052F999 /* Sources */,
 				02A1A5454CEDBC380F6FA9E2BC0A9FDA /* Pod */,
 				2A1C7869AE4E93B8F1731E6CF7C92E2D /* Support Files */,
@@ -300,6 +314,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1B7BB022148FB20052F999 /* Actionable+Helpers.swifttemplate in Resources */,
+				2D1B7BB122148FB20052F999 /* Actionable.swifttemplate in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
