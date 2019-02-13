@@ -22,7 +22,7 @@ pod 'Actionable'
 
 ## Author
 
-nevillco, connor.neville@raizlabs.com
+Connor Neville, cneville@rightpoint.com
 
 ## License
 

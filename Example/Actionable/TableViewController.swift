@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  TableViewController.swift
 //  Actionable
 //
-//  Created by nevillco on 02/13/2019.
-//  Copyright (c) 2019 nevillco. All rights reserved.
+//  Created by Connor Neville on 02/13/2019.
+//  Copyright (c) 2019 Rightpoint. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
