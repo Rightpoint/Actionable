@@ -7,6 +7,29 @@
 
 
 
+// MARK: - TableViewCell
+internal protocol TableViewCellDelegate: class {
+
+    func tableViewCell(_ cell: TableViewCell, didNotify action: TableViewCell.Action)
+
+}
+
+internal extension TableViewCell {
+
+    typealias ActionType = Action
+    typealias Delegate = TableViewCellDelegate
+
+    func notify(_ action: ActionType) {
+        delegate?.tableViewCell(self, didNotify: action)
+    }
+
+    func with(delegate: Delegate) -> Self {
+        self.delegate = delegate
+        return self
+    }
+
+}
+
 // MARK: - TableViewController
 internal protocol TableViewControllerDelegate: class {
 

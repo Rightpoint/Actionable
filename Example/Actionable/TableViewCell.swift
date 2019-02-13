@@ -9,16 +9,22 @@
 import Actionable
 import UIKit
 
-final class TableViewCell: UITableViewCell {
+final class TableViewCell: UITableViewCell, Actionable {
 
     static var reuseID = "TableViewCell.reuseID"
+
+    weak var delegate: Delegate?
+
+    enum Action {
+        case didTapButton
+    }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Send delegated action", for: .normal)
+        button.setTitle("Test Actionable delegation", for: .normal)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 
         contentView.addSubview(button)
@@ -38,7 +44,7 @@ final class TableViewCell: UITableViewCell {
     }
 
     @objc func buttonTapped() {
-        print("Button tapped")
+        notify(.didTapButton)
     }
 
 }
