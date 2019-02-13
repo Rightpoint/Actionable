@@ -3,11 +3,11 @@ use_frameworks!
 
 target 'Actionable_Example' do
   pod 'Actionable', :path => '../'
+end
 
-  target 'Actionable_Tests' do
-    inherit! :search_paths
+target 'Actionable_Tests' do
+  inherit! :search_paths
 
-    pod 'Quick'
-    pod 'Nimble'
-  end
+  pod 'Quick'
+  pod 'Nimble'
 end
