@@ -8,36 +8,21 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Actionable'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Actionable.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.0.1'
+  s.summary          = 'A cleaner delegation pattern for iOS.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+    Actionable use code generation to give you the benefits of matching the style of builtin iOS delegate protocols with less boilerplate and tedious maintenance.
+  DESC
 
   s.homepage         = 'https://github.com/nevillco/Actionable'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'nevillco' => 'connor.neville@raizlabs.com' }
+  s.author           = { 'Connor Neville' => 'connor.neville@raizlabs.com' }
   s.source           = { :git => 'https://github.com/nevillco/Actionable.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'Sources/**/*'
-  
-  # s.resource_bundles = {
-  #   'Actionable' => ['Actionable/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Sourcery'
   s.swift_version = '4.2'
 end
