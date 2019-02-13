@@ -1,19 +1,13 @@
 PODS:
   - Actionable (0.1.0):
     - Sourcery
-  - Nimble (7.3.4)
-  - Quick (1.3.4)
   - Sourcery (0.15.0)
 
 DEPENDENCIES:
   - Actionable (from `../`)
-  - Nimble
-  - Quick
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Nimble
-    - Quick
     - Sourcery
 
 EXTERNAL SOURCES:
@@ -22,10 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Actionable: 2f85f24447c57788c5c199c4dff73b3edad29510
-  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  Quick: f4f7f063c524394c73ed93ac70983c609805d481
   Sourcery: 5895672cae353cdbfa95f3f4aaeb75a664d76f6a
 
-PODFILE CHECKSUM: 95f5879c79b501b5acdb3c7b76672194caef5cb7
+PODFILE CHECKSUM: 030b370476c56b9cd9f76f722b8a00bfbb0ead4a
 
 COCOAPODS: 1.5.3
