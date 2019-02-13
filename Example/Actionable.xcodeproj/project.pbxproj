@@ -221,7 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "../actionable\n# $PODS_ROOT/Sourcery/bin/sourcery --sources $SOURCE_ROOT --templates $PODS_ROOT/foo\n";
+			shellScript = "../actionable -i $PROJECT_DIR -o $PROJECT_DIR/Actionable/Actionable+Conformance.swift\n";
 		};
 		F3DECDAF74DB3BA1A32E9C33 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

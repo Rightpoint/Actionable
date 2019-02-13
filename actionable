@@ -1,6 +1,29 @@
 #!/bin/bash
 
+while getopts "i:o:" opt; do
+  case ${opt} in
+    i )
+      INPUT_DIR=$OPTARG
+    ;;
+    o )
+      OUTPUT_FILE=$OPTARG
+    ;;
+    \? )
+      echo "Usage: cmd [-i] [-o]"
+      exit 1
+    ;;
+  esac
+done
+
+if [ -z $INPUT_DIR ]; then
+  echo "Error: Actionable input directory not specified [-i]"
+  exit 1
+fi
+
+if [ -z $OUTPUT_FILE ]; then
+  echo "Error: Actionable output file not specified [-o]"
+  exit 1
+fi
+
 BASE_DIR=$(dirname $0)
-OUTPUT_FILE=$SOURCE_ROOT/Actionable/Actionable+Conformance.swift
-echo $OUTPUT_FILE
-$PODS_ROOT/Sourcery/bin/sourcery --sources $SOURCE_ROOT --sources $BASE_DIR/Sources/ --templates $BASE_DIR/Resources/ --output $OUTPUT_FILE
+$PODS_ROOT/Sourcery/bin/sourcery --sources $INPUT_DIR --sources $BASE_DIR/Sources/ --templates $BASE_DIR/Resources/ --output $OUTPUT_FILE
