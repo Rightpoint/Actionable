@@ -1,5 +1,10 @@
 #!/bin/bash
 
+SOURCERY_PATH=$PODS_ROOT/Sourcery/bin/sourcery
+ACTIONABLE_PATH=$(dirname $0)
+ACTIONABLE_SWIFT=$ACTIONABLE_PATH/Sources/Actionable.swift
+ACTIONABLE_TEMPLATES=$ACTIONABLE_PATH/Resources/
+
 while getopts "i:o:" opt; do
   case ${opt} in
     i )
@@ -25,5 +30,4 @@ if [ -z $OUTPUT_FILE ]; then
   exit 1
 fi
 
-BASE_DIR=$(dirname $0)
-$PODS_ROOT/Sourcery/bin/sourcery --sources $INPUT_DIR --sources $BASE_DIR/Sources/ --templates $BASE_DIR/Resources/ --output $OUTPUT_FILE
+$SOURCERY_PATH --sources $INPUT_DIR --sources $ACTIONABLE_SWIFT --templates $ACTIONABLE_TEMPLATES --output $OUTPUT_FILE
