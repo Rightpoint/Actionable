@@ -23,11 +23,6 @@ internal extension TableViewCell {
         delegate?.tableViewCell(self, didNotify: action)
     }
 
-    func with(delegate: Delegate) -> Self {
-        self.delegate = delegate
-        return self
-    }
-
 }
 
 // MARK: - TableViewController
@@ -44,11 +39,6 @@ internal extension TableViewController {
 
     func notify(_ action: ActionType) {
         delegate?.tableViewController(self, didNotify: action)
-    }
-
-    func with(delegate: Delegate) -> Self {
-        self.delegate = delegate
-        return self
     }
 
 }
