@@ -2,8 +2,8 @@
 
 SOURCERY_PATH=$PODS_ROOT/Sourcery/bin/sourcery
 ACTIONABLE_PATH=$(dirname $0)
-ACTIONABLE_SWIFT=$ACTIONABLE_PATH/Sources/Actionable.swift
-ACTIONABLE_TEMPLATES=$ACTIONABLE_PATH/Resources/
+ACTIONABLE_SWIFT_FILE=$ACTIONABLE_PATH/Sources/Actionable.swift
+ACTIONABLE_TEMPLATES_DIR=$ACTIONABLE_PATH/Resources/
 
 while getopts "i:o:" opt; do
   case ${opt} in
@@ -14,7 +14,7 @@ while getopts "i:o:" opt; do
       OUTPUT_FILE=$OPTARG
     ;;
     \? )
-      echo "Usage: cmd [-i] [-o]"
+      echo "Actionable usage: cmd [-i] [-o]"
       exit 1
     ;;
   esac
@@ -30,4 +30,4 @@ if [ -z $OUTPUT_FILE ]; then
   exit 1
 fi
 
-$SOURCERY_PATH --sources $INPUT_DIR --sources $ACTIONABLE_SWIFT --templates $ACTIONABLE_TEMPLATES --output $OUTPUT_FILE
+$SOURCERY_PATH --sources $INPUT_DIR --sources $ACTIONABLE_SWIFT_FILE --templates $ACTIONABLE_TEMPLATES_DIR --output $OUTPUT_FILE
