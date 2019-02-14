@@ -11,13 +11,13 @@ import UIKit
 
 final class TableViewCell: UITableViewCell, Actionable {
 
-    static var reuseID = "TableViewCell.reuseID"
-
     weak var delegate: Delegate?
 
     enum Action {
         case didTapButton
     }
+
+    static var reuseID = "TableViewCell.reuseID"
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
