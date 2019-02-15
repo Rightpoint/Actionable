@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
     Actionable use code generation to give you the benefits of matching the style of builtin iOS delegate protocols with less boilerplate and tedious maintenance.
   DESC
 
-  s.homepage         = 'https://github.com/nevillco/Actionable'
+  s.homepage         = 'https://github.com/Raizlabs/Actionable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Connor Neville' => 'connor.neville@raizlabs.com' }
-  s.source           = { :git => 'https://github.com/nevillco/Actionable.git', :tag => s.version.to_s }
+  s.author           = { 'Connor Neville' => 'cneville@rightpoint.com' }
+  s.source           = { :git => 'https://github.com/Raizlabs/Actionable.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
 

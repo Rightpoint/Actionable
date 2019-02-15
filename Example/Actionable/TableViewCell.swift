@@ -2,7 +2,7 @@
 //  TableViewCell.swift
 //  Actionable_Example
 //
-//  Created by Connor Neville on 2/13/19.
+//  Created by Connor Neville on 02/13/2019.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
