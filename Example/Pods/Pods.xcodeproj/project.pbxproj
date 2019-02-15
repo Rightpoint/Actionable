@@ -10,6 +10,7 @@
 		15FC7701D55C71BA679FC30F60CA14D0 /* Actionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D05B5A80B5BC3016BC050816D7792 /* Actionable.swift */; };
 		1637333DDA18AC4DBFB411A16B2A1943 /* Pods-Actionable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BCF10ADD7F347BD749FDFDBE3D902CD /* Pods-Actionable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2999801E4F3D905A0909AB0ECFE6A889 /* Pods-Actionable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3913DD19B9FA964BC4688C2176D768 /* Pods-Actionable_Example-dummy.m */; };
+		2D338531221714BB0049694A /* actionable.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2D1B7BB522149BD80052F999 /* actionable.sh */; };
 		4A04C89ACBEDC1F474DE27A036ED5ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		83C7AB4F38CB127F6D8B15EA0781B0C0 /* Actionable+Helpers.swifttemplate in Resources */ = {isa = PBXBuildFile; fileRef = F0FB33AFA206888C24187EC1713B06CB /* Actionable+Helpers.swifttemplate */; };
 		9B27C181A45ACF4726D7F57DAD4E60FA /* Actionable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A83179A8324887026AC0038A13C05B /* Actionable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,7 +32,7 @@
 /* Begin PBXFileReference section */
 		08BFB06B2F7BC7913F02D83B26E6AE91 /* Pods-Actionable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Actionable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1B5E58F7B4BBA77A89FB7BBA9C32A350 /* Pods-Actionable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Actionable_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2D1B7BB522149BD80052F999 /* actionable */ = {isa = PBXFileReference; lastKnownFileType = text; path = actionable; sourceTree = "<group>"; };
+		2D1B7BB522149BD80052F999 /* actionable.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = actionable.sh; sourceTree = "<group>"; };
 		31183DE230DD8B646922B600D5D27BAC /* Pods-Actionable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Actionable_Example.modulemap"; sourceTree = "<group>"; };
 		33B063D534F5F264D9A8E0143016D349 /* Actionable.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Actionable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		33DDBCB47B1A2595537BC5BB39C3B42B /* Actionable.swifttemplate */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Actionable.swifttemplate; path = Resources/Actionable.swifttemplate; sourceTree = "<group>"; };
@@ -164,7 +165,7 @@
 				F0FB33AFA206888C24187EC1713B06CB /* Actionable+Helpers.swifttemplate */,
 				23E95A1234ACC8719570DCE03F28AF4A /* Pod */,
 				302A6A4C573700A2B49BD63F25CD600D /* Support Files */,
-				2D1B7BB522149BD80052F999 /* actionable */,
+				2D1B7BB522149BD80052F999 /* actionable.sh */,
 			);
 			name = Actionable;
 			path = ../..;
@@ -300,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D338531221714BB0049694A /* actionable.sh in Resources */,
 				83C7AB4F38CB127F6D8B15EA0781B0C0 /* Actionable+Helpers.swifttemplate in Resources */,
 				B2FF9D32C49C0A23F2BD42FAA8F2AE9F /* Actionable.swifttemplate in Resources */,
 			);

@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'Sources/**/*'
-  s.resources = ['actionable', 'Resources/**/*']
+  s.resources = ['actionable.sh', 'Resources/**/*']
   s.dependency 'Sourcery'
   s.swift_version = '4.2'
 end

@@ -28,7 +28,7 @@ But maintaining this style as you develop can be tedious and carry a lot of boil
 First, add the build phase that performs the code generation. Insert it prior to the `Compile Sources` phase. Specify your input files (`-i`) and the file where your output will be generated (`-o`). Make sure the output file is added to your Xcode project.
 
 ```bash
-$PODS_ROOT/Actionable/actionable -i $PROJECT_DIR/ -o $PROJECT_DIR/Generated/Actionable+Generated.swift
+$PODS_ROOT/Actionable/actionable.sh -i $PROJECT_DIR/ -o $PROJECT_DIR/Generated/Actionable+Generated.swift
 ```
 
 Now you're ready to add your delegates. To conform to Actionable, simply declare a delegate and a set of actions:
