@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Actionable'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A cleaner delegation pattern for iOS.'
 
   s.description      = <<-DESC
